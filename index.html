@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raj Gangurde - Web developer - Designer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.jpg" class="logo">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Web developer</p>
+                <h1>Hi I am <span>Raj</span> Gangurde </h1>
+            </div>
+        </div>
+    </div>
+<!--------About Section--------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col1">
+                    <img src="images/bg.jpg" width="500px" height="400px">
+                </div>
+                <div class="about-col2">
+                    <h1 class="sub-title">About me</h1> 
+                    <p>Hi my name is Raj Gangurde and I am a web developer.
+                        <br>I have a good knwoledge about Html and css and basic knwoledge about javascript
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links " onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links " onclick="opentab('education')">Education</p>
+
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Html/Css</span><br>Design the or App pages</li>
+                            <li><span>Web developement</span><br>developed responsive websites</li>
+                            <li><span>javascript</span><br>basic knwoledge</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022</span><br>Part time math teacher at Jaybhadra Institute Pratappur</li>
+                            <li><span>2023</span>Complets freelancing website of Ganesh Kirana store</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022</span><br>Completes graduation with 9.03 CGPA</li>
+                            <li><span>2019</span><br>Passed HSC with 68.02%</li>
+                            <li><span>2017</span><br>Passed SSC with 87.40%</li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-----------------services---------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My services</h1>
+            <div class="services-list">
+                <div>
+                    <h2>Web design</h2>
+                    <p>I have design web pages to learn more click on learn more button here</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <h2>Web development</h2>
+                    <p>I have create good responsive web sites</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <h2>App page design</h2>
+                    <p>I have create good responsive web sites</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!------------contact---------->
+    <div id="contact">
+        <div class="container">
+              <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                   <b>E-mail:</b> <br><p>rajgangurde1411@gmail.com</p><br>
+                    <b>Phone no:</b><br><p>9021149758</p>
+                    <hr>
+                    <div class="social-icons">
+                       <h3>Visit Instagram</h3> <a href="https://www.instagram.com/_raj_gangurde/?igshid=ZDdkNTZiNTM%3D" class="btn">click here</a>
+                       <h3>Visit Linkedin</h3><a href="https://www.linkedin.com/authwall?trk=bf&trkInfo=AQGWzNQXO62_BwAAAYdWcddQysOU0BsmOmrv40VvwMNaoriXM7C3FQjY-fSye84cbk8G5K0rLuwu8NvFaLHWRsG1xMntdsksQlkiDPqxXwY144cMbSDcs3z6fekRD4aRUT-lORo=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fraj-gangurde-28868a229" class="btn">click here</a>
+                    </div>
+                    <a href="images/cv.pdf.pdf" download class="btn2 btn3">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form method="post" name="google-sheet">
+                        <input type="text"id="fname" name="Name" placeholder="Your name" required>
+                        <input type="email"id="email" name="email" placeholder="Enter Email" required>
+                        <textarea id="msg" name="Massage" rows="10" placeholder="Any Query"></textarea>
+                        <button type="submit" name="submit" class="btn2 btn3" >Send</button>
+                    </form>
+                </div>
+              </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright : All rights reserved to @ Raj Gangurde author of this site</p>
+        </div>
+    </div>
+  <script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+   function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+   }
+event.currentTarget.classList.add("active-link");
+document.getElementById(tabname).classList.add("active-tab");
+}
+
+    
+  </script> 
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbw7dV9IiqwbWJhalY-Kvu5sWlX9HwA2IE7k4doUsmD8dev58jeEOdInOgcQNJR1-I1WbQ/exec'
+    const form = document.forms['google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+        .catch(error => console.error('Error!', error.message))
+        form.reset()
+    })
+  </script> https://script.google.com/macros/s/AKfycbw7dV9IiqwbWJhalY-Kvu5sWlX9HwA2IE7k4doUsmD8dev58jeEOdInOgcQNJR1-I1WbQ/exec
+</body>
+</html>
